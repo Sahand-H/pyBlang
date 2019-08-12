@@ -12,7 +12,8 @@ class Model:
         :param name: name of the model to be run (name of .bl file)
         :param project_path: filepath to the Blang project directory that houses the .bl file
         :param data: optional argument to pass in observed data (in .csv format) into blang
-        :param blang_args: additional runtime arguments, full list of which is here: https://www.stat.ubc.ca/~bouchard/blang/
+        :param blang_args: additional runtime arguments, full list of which is here:
+            https://www.stat.ubc.ca/~bouchard/blang/
         :param out_path: optional argument, set to false to output to current folder instead of Blang default
         :param data_name: optional argument, use if the name of the parameter in the blang model is different to the
             .csv file's name
