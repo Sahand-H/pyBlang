@@ -4,8 +4,8 @@ _build
 _static
 _templates
 *.pyc
-docs/_build
-docs/_static
-docs/_template
-build/*
-docs/build/*
+docs/_build/
+docs/_static/
+docs/_template/
+.idea/workspace.xml
+.idea/vcs.xml
