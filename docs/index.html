@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to pyBlang’s documentation! &mdash; pyBlang 1.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> pyBlang
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to pyBlang’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">pyBlang</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to pyBlang’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pyBlang.model">
+<span id="welcome-to-pyblang-s-documentation"></span><h1>Welcome to pyBlang’s documentation!<a class="headerlink" href="#module-pyBlang.model" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyBlang.model.Model">
+<em class="property">class </em><code class="descclassname">pyBlang.model.</code><code class="descname">Model</code><span class="sig-paren">(</span><em>name</em>, <em>project_path</em>, <em>data=None</em>, <em>blang_args=None</em>, <em>out_path=True</em>, <em>data_name=None</em>, <em>post_process='NoPostProcessor'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/model.html#Model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.model.Model" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyBlang.model.Model.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>name</em>, <em>project_path</em>, <em>data=None</em>, <em>blang_args=None</em>, <em>out_path=True</em>, <em>data_name=None</em>, <em>post_process='NoPostProcessor'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/model.html#Model.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.model.Model.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor for a Blang model object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> – name of the model to be run (name of .bl file)</li>
+<li><strong>project_path</strong> – filepath to the Blang project directory that houses the .bl file</li>
+<li><strong>data</strong> – optional argument to pass in observed data (in .csv format) into blang</li>
+<li><strong>blang_args</strong> – additional runtime arguments, full list of which is here:
+<a class="reference external" href="https://www.stat.ubc.ca/~bouchard/blang/">https://www.stat.ubc.ca/~bouchard/blang/</a></li>
+<li><strong>out_path</strong> – optional argument, set to false to output to current folder instead of Blang default</li>
+<li><strong>data_name</strong> – optional argument, use if the name of the parameter in the blang model is different to the
+.csv file’s name</li>
+<li><strong>post_process</strong> – Set post-processing options, defaults to NoPostProcessor, other option is
+DefaultPostProcessor</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.model.Model.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>run_args=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/model.html#Model.run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.model.Model.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the Model with its assigned arguments (set by model constructor) or with different one-time arguments.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>run_args</strong> – optional, runs the model with these arguments as opposed to the ones defined in model
+instantiation</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A result object that contains the output of the run</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-pyBlang.variable"></span><dl class="class">
+<dt id="pyBlang.variable.Variable">
+<em class="property">class </em><code class="descclassname">pyBlang.variable.</code><code class="descname">Variable</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/variable.html#Variable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.variable.Variable" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyBlang.variable.Variable._Variable__set_name">
+<code class="descname">_Variable__set_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.variable.Variable._Variable__set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function to set the name of the random variable object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.variable.Variable.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/variable.html#Variable.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.variable.Variable.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.variable.Variable.get_acf">
+<code class="descname">get_acf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/variable.html#Variable.get_acf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.variable.Variable.get_acf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates and returns the acf of the random variable</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.variable.Variable.get_ess">
+<code class="descname">get_ess</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/variable.html#Variable.get_ess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.variable.Variable.get_ess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the ESS calculated by blang for this random variable.</p>
+<p>Throws exception if file was not found (Post-processing option was not selected)
+:return: ESS</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.variable.Variable.plot_acf">
+<code class="descname">plot_acf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/variable.html#Variable.plot_acf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.variable.Variable.plot_acf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the ACF plot of the random variable</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.variable.Variable.plot_posterior">
+<code class="descname">plot_posterior</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/variable.html#Variable.plot_posterior"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.variable.Variable.plot_posterior" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the posterior pdf/pmf plot for this random variable</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.variable.Variable.plot_trace">
+<code class="descname">plot_trace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/variable.html#Variable.plot_trace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.variable.Variable.plot_trace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the trace plot for the MCMC samples of this random variable</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-pyBlang.result"></span><dl class="class">
+<dt id="pyBlang.result.Result">
+<em class="property">class </em><code class="descclassname">pyBlang.result.</code><code class="descname">Result</code><span class="sig-paren">(</span><em>path</em>, <em>post_proc_option</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/result.html#Result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.result.Result" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyBlang.result.Result._Result__get_ess">
+<code class="descname">_Result__get_ess</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.result.Result._Result__get_ess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result._Result__get_folders">
+<code class="descname">_Result__get_folders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.result.Result._Result__get_folders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result._Result__get_monitoring">
+<code class="descname">_Result__get_monitoring</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.result.Result._Result__get_monitoring" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result._Result__get_monitoring_plots">
+<code class="descname">_Result__get_monitoring_plots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.result.Result._Result__get_monitoring_plots" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result._Result__get_posterior_plots">
+<code class="descname">_Result__get_posterior_plots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.result.Result._Result__get_posterior_plots" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result._Result__get_samples">
+<code class="descname">_Result__get_samples</code><span class="sig-paren">(</span><em>dataframe=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.result.Result._Result__get_samples" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result._Result__get_summaries">
+<code class="descname">_Result__get_summaries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.result.Result._Result__get_summaries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result._Result__get_trace_plots">
+<code class="descname">_Result__get_trace_plots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.result.Result._Result__get_trace_plots" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result._Result__get_trace_plots_full">
+<code class="descname">_Result__get_trace_plots_full</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.result.Result._Result__get_trace_plots_full" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result._Result__set_variables">
+<code class="descname">_Result__set_variables</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyBlang.result.Result._Result__set_variables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>path</em>, <em>post_proc_option</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/result.html#Result.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.result.Result.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyBlang.result.Result.print_folders">
+<code class="descname">print_folders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyBlang/result.html#Result.print_folders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyBlang.result.Result.print_folders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Sahand Hosseini
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

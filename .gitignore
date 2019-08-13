@@ -9,3 +9,5 @@ docs/_static/
 docs/_template/
 .idea/workspace.xml
 .idea/vcs.xml
+docsrc/_build
+build/*
