@@ -40,7 +40,7 @@ class Variable:
         :return: ESS
         """
         try:
-            ess = pd.read_csv(self.path.split('samples/')[0]+'ess/'+self.name+'.csv',index_col=0).values
+            ess = pd.read_csv(self.path.split('samples/')[0]+'ess/'+self.name+'-ess.csv',index_col=0).values
             print("ESS for this random variable is: " + ess)
             return ess
         except FileNotFoundError:
